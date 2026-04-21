@@ -50,6 +50,7 @@ export default function BuildWithMe() {
     company: '',
     message: '',
     budget: '',
+    _honey: '',   // honeypot — must stay empty
   });
   const [status, setStatus] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle');
   const [showCal, setShowCal] = useState(false);
@@ -62,6 +63,10 @@ export default function BuildWithMe() {
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
+
+    // Honeypot check — bots fill hidden fields, humans don't
+    if (form._honey) return;
+
     setStatus('sending');
 
     if (typeof window !== 'undefined' && (window as any).dataLayer) {
@@ -76,7 +81,7 @@ export default function BuildWithMe() {
       });
       if (res.ok) {
         setStatus('sent');
-        setForm({ name: '', email: '', company: '', message: '', budget: '' });
+        setForm({ name: '', email: '', company: '', message: '', budget: '', _honey: '' });
       } else {
         throw new Error('Failed');
       }
@@ -343,6 +348,25 @@ export default function BuildWithMe() {
                     </select>
                   </div>
 
+                  {/* Honeypot — CSS-hidden field catches bots */}
+                  <input
+                    name="_honey"
+                    type="text"
+                    value={form._honey}
+                    onChange={handleChange}
+                    tabIndex={-1}
+                    autoComplete="off"
+                    aria-hidden="true"
+                    style={{
+                      position: 'absolute',
+                      left: '-9999px',
+                      opacity: 0,
+                      pointerEvents: 'none',
+                      width: '1px',
+                      height: '1px',
+                    }}
+                  />
+
                   <button
                     type="submit"
                     disabled={status === 'sending'}
@@ -486,6 +510,7 @@ export default function BuildWithMe() {
                           });
                         }
                       }}
+                      className="hover-electric"
                       style={{
                         display: 'flex',
                         alignItems: 'center',
@@ -493,14 +518,7 @@ export default function BuildWithMe() {
                         color: '#6B7280',
                         textDecoration: 'none',
                         fontSize: '0.85rem',
-                        transition: 'color 0.2s ease',
                         padding: '0.25rem 0',
-                      }}
-                      onMouseEnter={(e) => {
-                        (e.currentTarget as HTMLAnchorElement).style.color = '#5B8AF0';
-                      }}
-                      onMouseLeave={(e) => {
-                        (e.currentTarget as HTMLAnchorElement).style.color = '#6B7280';
                       }}
                     >
                       <span>{link.icon}</span>
