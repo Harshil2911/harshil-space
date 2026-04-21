@@ -67,7 +67,7 @@ export default function BlogPage() {
                 <AnimateIn key={post.slug} from="bottom" delay={i * 0.1}>
                   <Link href={`/blog/${post.slug}`} style={{ textDecoration: 'none', display: 'block', height: '100%' }}>
                     <article
-                      className="glass-card"
+                      className="glass-card blog-card-hover"
                       style={{
                         padding: '2rem',
                         height: '100%',
@@ -75,16 +75,7 @@ export default function BlogPage() {
                         flexDirection: 'column',
                         gap: '1rem',
                         border: '1px solid rgba(91,138,240,0.12)',
-                        transition: 'transform 0.3s ease, border-color 0.3s ease',
                         cursor: 'pointer',
-                      }}
-                      onMouseEnter={(e) => {
-                        e.currentTarget.style.transform = 'translateY(-8px)';
-                        e.currentTarget.style.borderColor = `${post.tagColor}40`;
-                      }}
-                      onMouseLeave={(e) => {
-                        e.currentTarget.style.transform = 'translateY(0)';
-                        e.currentTarget.style.borderColor = 'rgba(91,138,240,0.12)';
                       }}
                     >
                       <div style={{ display: 'flex', justifyContent: 'space-between' }}>
