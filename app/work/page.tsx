@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Footer from '@/components/sections/Footer';
 import AnimateIn from '@/components/AnimateIn';
-import { VENTURES } from '@/components/sections/Ventures';
 
 export const metadata: Metadata = {
   title: 'Work | Case Studies & Portfolio',

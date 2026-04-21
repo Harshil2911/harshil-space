@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Footer from '@/components/sections/Footer';
 import AnimateIn from '@/components/AnimateIn';
-import { VENTURES } from '@/components/sections/Ventures';
+import { VENTURES } from '@/lib/ventures';
 
 export const metadata: Metadata = {
   title: 'Ventures | Workcin · Nexplacers · Triver Lab · Symrex',
