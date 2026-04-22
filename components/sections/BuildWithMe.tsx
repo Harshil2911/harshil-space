@@ -384,8 +384,8 @@ export default function BuildWithMe() {
                   {status === 'error' && (
                     <p style={{ color: '#ef4444', fontSize: '0.85rem', textAlign: 'center' }}>
                       Something went wrong. Try emailing directly:{' '}
-                      <a href="mailto:hello@harshilraval.com" style={{ color: '#5B8AF0' }}>
-                        hello@harshilraval.com
+                      <a href="mailto:hello@harshil.space" style={{ color: '#5B8AF0' }}>
+                        hello@harshil.space
                       </a>
                     </p>
                   )}
@@ -453,7 +453,7 @@ export default function BuildWithMe() {
                   Direct Contact
                 </div>
                 <a
-                  href="mailto:hello@harshilraval.com"
+                  href="mailto:hello@harshil.space"
                   style={{
                     color: '#5B8AF0',
                     fontSize: '0.95rem',
@@ -464,7 +464,7 @@ export default function BuildWithMe() {
                   }}
                   className="animated-link"
                 >
-                  📧 hello@harshilraval.com
+                  📧 hello@harshil.space
                 </a>
               </div>
 

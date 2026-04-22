@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title: 'Harshil Raval | AI Automation Founder & Serial Entrepreneur',
   description:
     'Harshil Raval — Serial entrepreneur and AI automation founder in Ahmedabad. Founder of Workcin, Nexplacers, Triver Lab & Symrex. I build systems that think, scale, and outlast.',
-  alternates: { canonical: 'https://harshilraval.com' },
+  alternates: { canonical: 'https://harshil.space' },
 };
 
 // Scroll depth tracking — injected as a client component

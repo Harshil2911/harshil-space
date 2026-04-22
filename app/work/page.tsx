@@ -6,7 +6,7 @@ import AnimateIn from '@/components/AnimateIn';
 export const metadata: Metadata = {
   title: 'Work | Case Studies & Portfolio',
   description: 'Selected case studies and projects from Harshil Raval\'s portfolio — showcasing AI automation, product launches, and systems built across four ventures.',
-  alternates: { canonical: 'https://harshilraval.com/work' },
+  alternates: { canonical: 'https://harshil.space/work' },
 };
 
 export default function WorkPage() {

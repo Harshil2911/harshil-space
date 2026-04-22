@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'Workcin | AI Automation & Workflow Intelligence',
   description:
     'Workcin automates what holds businesses back. AI-powered workflows, deployed in days, not months. Founded by Harshil Raval in Ahmedabad.',
-  alternates: { canonical: 'https://harshilraval.com/ventures/workcin' },
+  alternates: { canonical: 'https://harshil.space/ventures/workcin' },
 };
 
 const FEATURES = [

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'Triver Lab | Startup Research & Innovation Lab',
   description:
     'Triver Lab is Harshil Raval\'s experimentation engine — where ambitious ideas get stress-tested, validated, and turned into market-ready products.',
-  alternates: { canonical: 'https://harshilraval.com/ventures/triver-lab' },
+  alternates: { canonical: 'https://harshil.space/ventures/triver-lab' },
 };
 
 export default function TriveLabPage() {

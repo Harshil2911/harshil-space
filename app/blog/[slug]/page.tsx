@@ -59,7 +59,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: post.title,
     description: post.content[0].slice(0, 155),
-    alternates: { canonical: `https://harshilraval.com/blog/${params.slug}` },
+    alternates: { canonical: `https://harshil.space/blog/${params.slug}` },
     openGraph: { type: 'article', title: post.title, publishedTime: post.date },
   };
 }
@@ -92,7 +92,7 @@ export default function BlogPostPage({ params }: Props) {
     author: { '@type': 'Person', name: 'Harshil Raval' },
     publisher: { '@type': 'Person', name: 'Harshil Raval' },
     datePublished: post.date,
-    url: `https://harshilraval.com/blog/${params.slug}`,
+    url: `https://harshil.space/blog/${params.slug}`,
   };
 
   return (

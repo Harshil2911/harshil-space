@@ -1,5 +1,5 @@
 export async function GET() {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://harshilraval.com';
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://harshil.space';
 
   const posts = [
     {
@@ -48,7 +48,7 @@ export async function GET() {
       <guid isPermaLink="true">${siteUrl}/blog/${p.slug}</guid>
       <pubDate>${new Date(p.date).toUTCString()}</pubDate>
       <description><![CDATA[${p.excerpt}]]></description>
-      <author>hello@harshilraval.com (Harshil Raval)</author>
+      <author>hello@harshil.space (Harshil Raval)</author>
     </item>`
       )
       .join('')}

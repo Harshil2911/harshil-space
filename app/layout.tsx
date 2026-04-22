@@ -5,7 +5,7 @@ import MobileCTA from '@/components/MobileCTA';
 import Loader from '@/components/Loader';
 import { SkipLink } from '@/components/SkipLink';
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://harshilraval.com';
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://harshil.space';
 const gtmId = process.env.NEXT_PUBLIC_GTM_ID || 'GTM-56JR7KS9';
 
 export const metadata: Metadata = {

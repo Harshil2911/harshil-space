@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: 'Ventures | Workcin · Nexplacers · Triver Lab · Symrex',
   description:
     'Explore the four ventures built by Harshil Raval: Workcin (AI automation), Nexplacers (talent intelligence), Triver Lab (startup lab), and Symrex (digital infrastructure).',
-  alternates: { canonical: 'https://harshilraval.com/ventures' },
+  alternates: { canonical: 'https://harshil.space/ventures' },
 };
 
 const orgSchema = {
@@ -16,7 +16,7 @@ const orgSchema = {
   '@graph': VENTURES.map((v) => ({
     '@type': 'Organization',
     name: v.name,
-    url: `https://harshilraval.com${v.href}`,
+    url: `https://harshil.space${v.href}`,
     founder: { '@type': 'Person', name: 'Harshil Raval' },
     description: v.description,
   })),

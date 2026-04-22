@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'Nexplacers | Talent & Placement Intelligence',
   description:
     'Nexplacers connects top talent with the right opportunities through intelligent matching systems. Next-generation recruitment by Harshil Raval.',
-  alternates: { canonical: 'https://harshilraval.com/ventures/nexplacers' },
+  alternates: { canonical: 'https://harshil.space/ventures/nexplacers' },
 };
 
 export default function NexplacersPage() {

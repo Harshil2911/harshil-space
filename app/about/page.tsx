@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: 'About Harshil Raval | Serial Entrepreneur & AI Founder',
   description:
     'The full story of Harshil Raval — from Ahmedabad to building 4 AI-era ventures. Philosophy, timeline, and the systems thinking behind every decision.',
-  alternates: { canonical: 'https://harshilraval.com/about' },
+  alternates: { canonical: 'https://harshil.space/about' },
 };
 
 const TIMELINE = [

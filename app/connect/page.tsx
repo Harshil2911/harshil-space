@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: 'Connect | Work with Harshil Raval',
   description:
     'Get in touch with Harshil Raval — for AI automation, co-founder conversations, investor discussions, or just a bold idea worth exploring.',
-  alternates: { canonical: 'https://harshilraval.com/connect' },
+  alternates: { canonical: 'https://harshil.space/connect' },
 };
 
 export default function ConnectPage() {

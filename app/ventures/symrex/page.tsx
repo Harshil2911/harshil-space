@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'Symrex | Digital Infrastructure & Security Systems',
   description:
     'Symrex builds resilient digital infrastructure and security systems that protect businesses from threats they haven\'t anticipated yet. Founded by Harshil Raval.',
-  alternates: { canonical: 'https://harshilraval.com/ventures/symrex' },
+  alternates: { canonical: 'https://harshil.space/ventures/symrex' },
 };
 
 export default function SymrexPage() {

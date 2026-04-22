@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'Blog | Founder Insights from Harshil Raval',
   description:
     'AI automation, startup building, and founder lessons from Harshil Raval. Real insights from building 4 companies in India.',
-  alternates: { canonical: 'https://harshilraval.com/blog' },
+  alternates: { canonical: 'https://harshil.space/blog' },
 };
 
 const POSTS = [

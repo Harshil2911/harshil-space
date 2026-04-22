@@ -49,7 +49,7 @@ export async function GET(req: Request) {
             display: 'flex',
           }} />
           <span style={{ color: '#5B8AF0', fontSize: '16px', letterSpacing: '0.18em', textTransform: 'uppercase', display: 'flex' }}>
-            HARSHILRAVAL.COM
+            HARSHIL.SPACE
           </span>
         </div>
 
@@ -107,7 +107,7 @@ export async function GET(req: Request) {
           fontWeight: 700,
           display: 'flex',
         }}>
-          harshilraval.com
+          harshil.space
         </div>
       </div>
     ),
